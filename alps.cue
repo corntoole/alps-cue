@@ -47,28 +47,3 @@ package alps
 	version: *"1.0" | _|_
 	descriptor: #Descriptor | [#Descriptor, ...#Descriptor]
 }
-
-a1: #Alps & {
-	descriptor: [
-		{
-			id:   "search"
-			type: "safe"
-			rt:   "#profile-results"
-		},
-		{
-			id:   "profile-results"
-			type: "semantic"
-		},
-	]
-}
-
-a2: #Alps & {
-	descriptor: [
-		{id: "f2"},
-		{href: "f3"},
-	]
-}
-
-descrFail: #Descriptor & {
-	name: "bad descriptor"
-}
